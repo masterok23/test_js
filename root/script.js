@@ -2,10 +2,12 @@
 let a = 5;
 console.log(a);
 
+
+
 // // const obj = {
 // //         name: "Alex"
 // // }
-
+ 
 // // const arr = [1,2,3,4,5];
 
 // // console.log(obj.name + arr[1]);
