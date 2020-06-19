@@ -1,30 +1,14 @@
-let num = 50;
-
-if (num < 49) {
-    console.log('Неверно!')
-} else if (num > 100) {
-    console.log('Много!')
-} else {
-    console.log('Верно!')
-};
-
-
-(num == 50) ? console.log('Верно!') : console.log('Неверно!'); 
-
-switch(num == 50){
-    case num < 49:
-        console.log('Неверно!');
-        break;
-    case num > 100:
-        console.log('Много!');
-        break;
-    case num > 80:
-        console.log('Все еще много!');
-        break;
-    case num = 50:
-        console.log('Верно!');
-        break;
-    default:
-        console.log('Что-то пошло не так...');
-        break;
+let p_money = prompt("Ваш бюждет на месяц?"),
+    p_time = prompt("Введите дату в формате YYYY-MM-DD");
+    p_expenses = prompt("Введите обязательную статью расходов в этом месяце");
+    p_budget = prompt("Во сколько обойдется?");
+    
+let appData = {
+    budget : p_money,
+    timeData : p_time,
+    expenses : p_expenses + " " + p_budget,
+    optionalExpenses : null,
+    income : null,
+    savings : false
 }
+alert(appData.budget - p_budget / 30);
